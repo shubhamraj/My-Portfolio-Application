@@ -1,15 +1,12 @@
 
-.testi_item h4{
-    /* color: #fff !important; */
-}
-
- .p_120{
+.p_120{
     padding-top: 60px !important;
 }
 
 .card-title{
-color: darkgray;
+    color: blueviolet;
 }
+
 .bg-secondary{
     border: none;
 }
