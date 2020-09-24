@@ -1,0 +1,218 @@
+
+    
+<!--================Personal Details Area =================-->
+    <section class="home_banner_area">
+        <div class="container box_1620">
+            <div class="banner_inner d-flex align-items-center">
+                <div class="banner_content">
+                    <div class="media">
+                        <div class="d-flex">
+                            <img src="assets/img/myphoto/profile.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="personal_text">
+                                <h6>Hello Everybody, i am</h6>
+                                <h3>{{MyFullName}}</h3>
+                                <h4>{{MyDesignation}}</h4>
+                                <p>{{MyDesciption}}</p>
+                                <ul class="list basic_info">
+                                    <li><a><i class="lnr lnr-calendar-full"></i>{{MyBirthDate}}</a></li>
+                                    <li><a><i class="lnr lnr-phone-handset"></i>{{MyMobileNumber}}</a></li>
+                                    <li><a><i class="lnr lnr-envelope"></i> {{MyEmail}}</a></li>
+                                    <li><a><i class="lnr lnr-home"></i> {{MyAddress}}</a></li>
+                                </ul>
+                                <ul class="list personal_social">
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--================Personal Details Area =================-->
+ 
+ <!--================ About My Skills =================-->
+    <section class="welcome_area p_120">
+        <div class="container">
+            <div class="row welcome_inner">
+                <div class="col-lg-6">
+                    <div class="welcome_text">
+                        <h4>About Myself</h4>
+                        <p>{{AboutMyselfInfo}}</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="wel_item">
+                                    <i class="lnr lnr-briefcase"></i>
+                                    <h4>3.0+</h4>
+                                    <p>Total Experience</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="wel_item">
+                                    <i class="lnr lnr-chart-bars"></i>
+                                    <h4>10+</h4>
+                                    <p>Total Projects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv_btn">
+                        <a class="cv_button  btn-secondary" target="_blank"  (click)="downloadPDF()">Download CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4>Expertness</h4>
+                    <div class="tools_expert">
+                        <div class="skill_main">
+                            <div class="skill_item" *ngFor="let skills of MySkills">
+                                <h4> {{skills.Name}} <span class="counter"> {{skills.Percentage}} </span>%</h4>
+                                <div class="progress_br">
+                                    <div class="progress">
+                                        <div class="progress-bar" [ngStyle]="{'width':skills.Percentage+ '%'}" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!--================ About My Skills =================-->
+ 
+ <!--================ Education & Experience =================-->
+ <section class="mytabs_area p_120">
+     <div class="container">
+         <div class="tabs_inner">
+             <ul class="nav nav-tabs" id="myTab" role="tablist">
+                 <li class="nav-item">
+                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">My Experiences</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">My Education</a>
+                 </li>
+             </ul>
+             <div class="tab-content" id="myTabContent">
+                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                     <ul class="list">
+                         <li>
+                             <span></span>
+                             <div class="media">
+                                 <div class="d-flex">
+                                     <p>DEC 2018 to PRESENT</p>
+                                 </div>
+                                 <div class="media-body">
+                                     <h4>Define labs</h4>
+                                     <p>Software Developer<br />Pune, India</p>
+                                 </div>
+                             </div>
+                         </li>
+                         <li>
+                             <span></span>
+                             <div class="media">
+                                 <div class="d-flex">
+                                     <p>AUG 2017 to NOV 2018</p>
+                                 </div>
+                                 <div class="media-body">
+                                     <h4>Quiesta Technologies Private Limited.</h4>
+                                     <p>Junior Software Engineer  <br />Pune, India</p>
+                                 </div>
+                             </div>
+                         </li>
+                      
+                     </ul>
+                 </div>
+                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                     <ul class="list">
+                         <li>
+                             <span></span>
+                             <div class="media">
+                                 <div class="d-flex">
+                                     <p>AUG 2011 to MAR 2017</p>
+                                 </div>
+                                 <div class="media-body">
+                                     <h4>Bachelor of Engineering - BE, Computer Science, A</h4>
+                                     <p>ADCET<br />SANGLI, INDIA.</p>
+                                 </div>
+                             </div>
+                         </li>
+                         <li>
+                             <span></span>
+                             <div class="media">
+                                 <div class="d-flex">
+                                     <p>AUG 2009 to FEB 2011</p>
+                                 </div>
+                                 <div class="media-body">
+                                     <h4>H.S.C, Science</h4>
+                                     <p>KOLHAPUR, INDIA.</p>
+                                 </div>
+                             </div>
+                         </li>
+
+                         <li>
+                             <span></span>
+                             <div class="media">
+                                 <div class="d-flex">
+                                     <p>JUNE 2005 to APR 2009</p>
+                                 </div>
+                                 <div class="media-body">
+                                     <h4>S.S.C</h4>
+                                     <p>KOLHAPUR, INDIA.</p>
+                                 </div>
+                             </div>
+                         </li>
+                      
+                     </ul>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ <!--================ Education & Experience =================-->
+ 
+ <!--================ Projetcs =================-->
+ <section class="feature_area p_120">
+     <div class="container">
+         <div class="main_title">
+             <h2>Work Station Projects</h2>
+             <p>{{ProjectTitle}}</p>
+         </div>
+         <div class="feature_inner row">
+             <div class="col-lg-4 col-md-6" *ngFor="let project of MyProjectList">
+                 <div class="feature_item">
+                     <i class="{{project.Icon}}"></i>
+                     <h4>{{project.Name}}</h4>
+                     <p>{{project.Description}}</p>
+                     <div class="more_btn">
+                         <a class="main_btn"  data-toggle="modal" data-target="#exampleModalLong">Load More Details</a>
+                     </div>
+                 </div>
+               
+             </div>
+         </div>
+     </div>
+ </section>
+ <!--================ Projetcs =================-->
+
+ <!-- Project Information Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">My Project</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            Infomartion.
+        </div>
+     
+      </div>
+    </div>
+</div>

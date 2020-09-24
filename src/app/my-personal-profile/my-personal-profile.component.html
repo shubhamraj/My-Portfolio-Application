@@ -1,0 +1,83 @@
+<script src="../../assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="../../assets/js/theme.js"></script>
+<!--================ Home =================-->
+<section class="banner_area">
+	<div class="box_1620">
+		<div class="banner_inner d-flex align-items-center">
+			<div class="container">
+				<div class="banner_content text-center">
+					<h2>My Work</h2>
+					<div class="page_link">
+						<a>Home</a>
+						<a>About Us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================ Home =================-->
+
+<!--================ Personal Project =================-->
+<div class="site-section" id="features-section">
+	<div class="container">
+		<div class="row mb-5 justify-content-center text-center" data-aos="fade-up">
+			<div class="col-7 text-center  mb-5">
+				<h2 class="section-title">My Projects</h2>
+				<p class="lead">{{ProjectTitle}}</p>
+			</div>
+		</div>
+		<div class="row align-items-stretch">
+			<div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" *ngFor="let project of MyProjectList">
+				<div class="unit-4 d-block">
+					<div class="unit-4-icon mb-3">
+						<span class="icon-wrap">
+							<span class="text-primary icon-autorenew"> 
+						 		<i class="{{project.Icon}}"></i>
+							</span>
+						</span>
+					</div>
+					<div>
+						<h5>{{project.Name}}</h5>
+						<p>{{project.Description}}</p>
+						<p><a>Learn More</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--================ Personal Project=================-->
+
+<section class="testimonials_area p_120">
+	<div class="container">
+		<div class="main_title">
+			<h2>Extra Skills </h2>
+			<p></p>
+		</div>
+		<div class="testi_inner">
+			<div class="testi_slider owl-carousel">
+				<div class="item" *ngFor="let skill of MySkill">
+					
+					<!-- <div class="testi_item" style="text-align: center;color:#fff" [ngStyle]="{'background-color':skill.Color}" >
+						<div></div>
+						<h4>{{skill.Name}}</h4>
+						<p >{{skill.Percentage}} %</p> 
+					</div> -->
+
+					<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+						<div class="card-header "  >{{skill.Percentage}} %</div>
+						<div class="card-body bg-light">
+						  <h5 class="card-title">{{skill.Name}}</h5>
+						  <p class="card-text"> </p>
+						  <ngb-rating [(rate)]="currentRate"></ngb-rating>
+						</div>
+					  </div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+

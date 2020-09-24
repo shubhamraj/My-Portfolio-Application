@@ -1,0 +1,9 @@
+
+h1{
+    color: #fff;
+}
+
+.header_area .navbar .nav .nav-item .nav-link{
+    font-size: 16px !important;
+    font-weight: 600;
+}
