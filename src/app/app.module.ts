@@ -8,8 +8,8 @@ import { MyProfileComponent } from './my-profile/my-profile.component';
 import { MyPersonalProfileComponent } from './my-personal-profile/my-personal-profile.component';
 import { MyPofessionalProfileComponent } from './my-pofessional-profile/my-pofessional-profile.component';
 import { MyContactProfileComponent } from './my-contact-profile/my-contact-profile.component';
-import * as $ from 'jquery';
 import { ReactiveFormsModule } from '@angular/forms';
+import * as $ from 'jquery';
 
 
 
