@@ -45,7 +45,7 @@ export class MyContactProfileComponent implements OnInit {
     console.log(reqBody);
     //ready to send webapi
 
-    // this.MyService.sendMessage(reqBody)
+    // this.MessageService.sendMessage(reqBody)
     // .subscribe({
 
     //  });

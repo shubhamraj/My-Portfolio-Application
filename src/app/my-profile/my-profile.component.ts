@@ -11,6 +11,8 @@ export class MyProfileComponent implements OnInit {
 
   MyTitleName:any;
   MyAbout:any;
+  MyInstagramLink:any;
+  MyLinkdinLink:any;
 
   /**
   *constructor
@@ -18,7 +20,9 @@ export class MyProfileComponent implements OnInit {
   constructor(private router: Router) {
     this.MyTitleName = "SHUBHAM TILE";
     this.MyAbout = "Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills";
-   }
+    this.MyInstagramLink= "https://www.instagram.com/prince_shubhamraj_09/";
+    this.MyLinkdinLink="https://www.linkedin.com/in/shubham-tile-833a69bb"; 
+  }
 
   ngOnInit(): void {
   }
@@ -42,6 +46,24 @@ export class MyProfileComponent implements OnInit {
   */
   onContact(){
     this.router.navigate(['my-contact-profile']); 
+  }
+
+     /**
+   * social media link open with new window
+   */
+  onSocial(value){
+
+    if(value == 'linkedin'){
+      console.log(this.MyLinkdinLink);
+      window.open(this.MyLinkdinLink, "_blank")
+    }
+    if(value == 'instagram'){
+      window.open(this.MyInstagramLink, "_blank")
+    }
+    if(value == 'twitter'){
+     
+    }
+    
   }
 
 }
