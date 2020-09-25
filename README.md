@@ -20,15 +20,14 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Application 
 
-![image](https://user-images.githubusercontent.com/11661523/94197102-ef52f500-fed2-11ea-9303-ce9065befe06.png)
+<img width="943" alt="im1" src="https://user-images.githubusercontent.com/11661523/94236563-1210f800-ff2b-11ea-9977-0421c6fa41de.png">
 
-![image](https://user-images.githubusercontent.com/11661523/94197129-f843c680-fed2-11ea-821d-f3e9559a4c27.png)
+<img width="946" alt="im2" src="https://user-images.githubusercontent.com/11661523/94236596-21904100-ff2b-11ea-9b60-81dc41c8833a.png">
 
-![image](https://user-images.githubusercontent.com/11661523/94197149-fe39a780-fed2-11ea-9a03-1a8299cbe156.png)
+<img width="942" alt="im3" src="https://user-images.githubusercontent.com/11661523/94236600-235a0480-ff2b-11ea-89b7-37e0ec6dc984.png">
 
-![image](https://user-images.githubusercontent.com/11661523/94197167-04c81f00-fed3-11ea-9179-e103ff6fe5b2.png)
+<img width="944" alt="im4" src="https://user-images.githubusercontent.com/11661523/94236605-248b3180-ff2b-11ea-9e52-efa49572ffde.png">
 
-![image](https://user-images.githubusercontent.com/11661523/94197180-0abe0000-fed3-11ea-9c0b-956412a1c4ac.png)
 
 ## Code scaffolding
 
